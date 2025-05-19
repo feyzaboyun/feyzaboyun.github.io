@@ -65,13 +65,14 @@ function Destination() {
       {
         opacity: 1,
         x: 0,
+        duration: 1,
+        ease: "back.out(1)",
         scrollTrigger: {
           trigger: ".more-content",
-          start: "top 80%",
-          end: "top 30%",
-          toggleActions: "play none none reverse",
-          scrub: true,
-          markers: false, // Set to true for debugging
+          start: "top 75%",
+          end: "top 25%",
+          scrub: 0.8, // Increased scrub time
+          markers: false
         },
       }
     );
@@ -82,13 +83,14 @@ function Destination() {
         {
           opacity: 1,
           x: 0,
+          duration: 1,
+          ease: "back.out(1)",
           scrollTrigger: {
             trigger: ".more-content2",
-            start: "top 80%",
-            end: "top 30%",
-            toggleActions: "play none none reverse",
-            scrub: true,
-            markers: false, // Set to true for debugging
+            start: "top 75%",
+            end: "top 25%",
+            scrub: 0.8, // Increased scrub time
+            markers: false
           },
         }
       );
