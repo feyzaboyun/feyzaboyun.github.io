@@ -8,10 +8,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Or use a more comprehensive mobile fix:
-ScrollTrigger.config({
-  ignoreMobileResize: true
-});
 
 // Apply global fix for both vertical and horizontal scrolling
 const setGlobalStyles = () => {
@@ -45,6 +41,12 @@ function Destination() {
 
   useEffect(() => {
     setGlobalStyles();
+
+    ScrollTrigger.config({
+      ignoreMobileResize: true,
+      autoRefreshEvents: "visibilitychange,DOMContentLoaded,load",
+    });
+    
 
     // Animate destination text on enter
     gsap.fromTo(
