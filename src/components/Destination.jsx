@@ -60,7 +60,7 @@ function Destination() {
     // Animate more-content sliding in from the right (no overflow)
     gsap.fromTo(
       ".more-content",
-      { opacity: 0, x: 300 }, // x: 300px instead of 600 to stay in-bounds
+      { opacity: 1, x: 300 }, // x: 300px instead of 600 to stay in-bounds
       {
         opacity: 1,
         x: 0,
@@ -77,7 +77,7 @@ function Destination() {
 
     gsap.fromTo(
         ".more-content2",
-        { opacity: 0, x: -300 }, // x: 300px instead of 600 to stay in-bounds
+        { opacity: 1, x: -300 }, // x: 300px instead of 600 to stay in-bounds
         {
           opacity: 1,
           x: 0,
