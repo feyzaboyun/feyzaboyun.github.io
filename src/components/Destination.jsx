@@ -42,12 +42,6 @@ function Destination() {
   useEffect(() => {
     setGlobalStyles();
 
-    ScrollTrigger.config({
-      ignoreMobileResize: true,
-      autoRefreshEvents: "visibilitychange,DOMContentLoaded,load",
-    });
-    
-
     // Animate destination text on enter
     gsap.fromTo(
       ".destination-text",

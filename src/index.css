@@ -4,8 +4,10 @@
 }
 
 #root {
-  width: 100vw;
-  height: 100vh;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
@@ -373,7 +375,14 @@ html {
 .intro--disappear .destination {
   animation: fadeOut 1s ease-in-out forwards;
 }
-
+.scroll-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 40vh;
+  padding-bottom: 100vh;
+}
 .audio {
   padding: 1rem;
   border: none;
@@ -571,6 +580,18 @@ html {
     font-size: 1rem; /* Reduced font size */
     border-radius: 24px; /* Smaller corners */
     }
+
+  .scroll-container {
+    padding-top: 30vh;
+    padding-bottom: 80vh;
+    }
+    
+  .destination-text, 
+  .more-content, 
+  .more-content2 {
+    padding: 0 24px !important;
+    max-width: 90% !important;
+  }
   
 }
 
